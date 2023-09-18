@@ -5,7 +5,7 @@
 }
 
 header {
-    background-color: blueviolet;
+    background-color: rgb(160, 99, 218);
     height: 60px;
 }
 
@@ -19,13 +19,13 @@ li {
 }
 
 .intro-section {
-    background-color: darkblue;
+    background-color: rgb(36, 36, 170);
     color: aliceblue;
     min-height: 100vh;
 }
 
 .projects-section {
-    background-color: goldenrod;
+    background-color: rgb(194, 166, 95);
 }
 
 .projects-wrapper {
@@ -55,6 +55,12 @@ li {
 }
 
 footer {
-    background-color: greenyellow;
+    background-color: rgb(153, 190, 96);
     height: 60px;
+}
+
+@media (max-width: 800px) {
+    .project-ctnr {
+        flex-direction: column;
+    }
 }
