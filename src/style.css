@@ -5,12 +5,16 @@
 }
 
 .intro-section, .projects-section, .about-section, .contact-section {
-    padding: 50px 10%;
+    padding: 110px 10%;
 }
 
-header {
+nav {
     background-color: rgb(160, 99, 218);
     height: 60px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
 }
 
 li {
@@ -25,12 +29,15 @@ li {
 .intro-section {
     background-color: rgb(36, 36, 170);
     color: aliceblue;
-    min-height: 100vh;
+    min-height: calc(100vh - 60px);
     font-size: 2em;
+    display: flex;
+    align-items: center;
 }
 
 .projects-section {
     background-color: rgb(194, 166, 95);
+    min-height: 100vh;
 }
 
 .projects-wrapper {
@@ -61,8 +68,8 @@ li {
 
 .about-section {
     background-color: rgb(236, 123, 123);
-    padding: 50px 10%;
-
+    padding: 110px 10%;
+    min-height: 100vh;
 }
 
 .about-section p {
@@ -71,10 +78,10 @@ li {
 }
 
 .contact-section {
+    min-height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 20px;
 }
 
@@ -82,8 +89,12 @@ li {
     display: none;
 }
 
+.contact-name, .contact-email, .contact-message {
+    width: 100%;
+}
+
 .contact-name input, .contact-email input, .contact-message textarea {
-    width: 500px;
+    width: 100%;
     padding: 3px;
 }
 
@@ -99,5 +110,11 @@ footer {
 @media (max-width: 800px) {
     .project-ctnr {
         flex-direction: column;
+    }
+}
+
+@media (min-width: 626px) {
+    .contact-name, .contact-email, .contact-message {
+        width: 500px;
     }
 }
