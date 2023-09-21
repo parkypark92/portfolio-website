@@ -1,51 +1,81 @@
+:root {
+    --main-background: #2f3896;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--main-background);
+}
+
 .intro-section, .projects-section, .about-section, .contact-section {
-    padding: 110px 10%;
+    padding: 110px 5%;
 }
 
 nav {
-    background-color: rgb(160, 99, 218);
-    height: 60px;
-    position: sticky;
-    top: 0;
+    background:linear-gradient(#272d7e, rgba(39, 45, 126, 0.96));
+    padding: 0 5%;
+    height: 64px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+.logo {
+    color: aliceblue;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+ul {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
 }
 
 li {
     list-style: none;
-    display: inline-block;
 }
 
 .navigation {
     border: none;
+    width: 100px;
+    height: 30px;
 }
 
 .intro-section {
-    background-color: rgb(36, 36, 170);
+    background-color: var(--main-background);
     color: aliceblue;
-    min-height: calc(100vh - 60px);
-    font-size: 2em;
+    height: calc(100vh - 64px);
+    font-size: 30px;
     display: flex;
     align-items: center;
 }
 
+.intro-message {
+    padding: 10px 0px;
+    transition: opacity 200ms ease-in-out;
+    position: sticky;
+}
+
 .projects-section {
-    background-color: rgb(194, 166, 95);
+    background-color: var(--main-background);
     min-height: 100vh;
 }
 
 .projects-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 700px));
+    grid-template-columns: repeat(auto-fit, minmax(420px, 720px));
     justify-content: center;
-    gap: 50px;
-    padding: 50px 0px;
+    column-gap: 50px;
+    row-gap: 150px;
 }
 
 .project-ctnr {
@@ -56,20 +86,21 @@ li {
 .placeholder-img {
     background-color: gray;
     height: 200px;
-    min-width: 300px;
+    width: 300px;
 }
 
 .project-description {
     background-color: #fff;
     padding: 10px;
     height: 160px;
-    max-width: 420px;
+    width: 420px;
 }
 
 .about-section {
-    background-color: rgb(236, 123, 123);
-    padding: 110px 10%;
+    background-color: var(--main-background);
     min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .about-section p {
@@ -78,6 +109,7 @@ li {
 }
 
 .contact-section {
+    background-color: var(--main-background);
     min-height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
@@ -105,6 +137,11 @@ li {
 footer {
     background-color: rgb(153, 190, 96);
     height: 60px;
+}
+
+.invisible {
+    opacity: 0;
+    pointer-events: none;
 }
 
 @media (max-width: 800px) {
