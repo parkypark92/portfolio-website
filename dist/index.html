@@ -11,10 +11,10 @@
         <h1 class="logo">Hi, I'm Andrew.</h1>
         <ul>
             <li>
-                <button class="navigation projects-button">Projects</button>
+                <button class="navigation about-button">About</button>
             </li>
             <li>
-                <button class="navigation about-button">About</button>
+                <button class="navigation projects-button">Projects</button>
             </li>
             <li>
                 <button class="navigation contact-button">Contact</button>
@@ -29,7 +29,14 @@
         
     </section>
     <main>
+        <section class="about-section">
+                <h1 class="about-heading">ABOUT</h1>
+            <div class="about-ctnr">
+                <p>After completing a Bachelors Degree in Digital Media Design, I took a few years off to explore other interests. In 2022 I decided to revisit my passion for coding and dove into the world of Web Development! If you'd like to learn more about me, check out my socials!</p>
+            </div>
+        </section>
         <section class="projects-section">
+            <h1 class="projects-heading">PROJECTS</h1>
             <div class="projects-wrapper">
                 <div class="project-ctnr">
                     <div class="placeholder-img"></div>
@@ -75,25 +82,25 @@
                 </div>
             </div>
         </section>
-        <section class="about-section">
-            <p>After completing a Bachelors Degree in Digital Media Design, I took a few years off to explore other interests. In 2022 I decided to revisit my passion for coding and dove into the world of Web Development! If you'd like to learn more about me, check out my socials!</p>
-        </section>
         <section class="contact-section">
+            <h1 class="contact-heading">CONTACT</h1>
             <h3>Don't hesitate to contact me!</h3>
-                    <div class="contact-name">
-                        <label for="name">Name
-                        </label>
-                        <input type="text" id="name" placeholder="Name">
+                    <div class="contact-ctnr">
+                        <div class="contact-name">
+                            <label for="name">Name
+                            </label>
+                            <input type="text" id="name" placeholder="Name">
+                        </div>
+                        <div class="contact-email">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="contact-message">
+                            <label for="message">Your Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Please enter your message!"></textarea>
+                        </div>
+                        <button> Submit</button>
                     </div>
-                    <div class="contact-email">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email">
-                    </div>
-                    <div class="contact-message">
-                        <label for="message">Your Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Please enter your message!"></textarea>
-                    </div>
-                    <button> Submit</button>
         </section>
     </main>
     <footer>
