@@ -17,7 +17,7 @@ body {
 
 section {
     padding: 110px 5%;
-    border-top: 1px solid black;
+    /* border-top: 1px solid black; */
 }
 
 nav {
@@ -137,9 +137,27 @@ li {
 }
 
 .placeholder-img {
-    background-color: gray;
+    background-color: var(--custom-pink);
     height: 200px;
     width: 300px;
+}
+
+.project-img {
+    background-color: var(--custom-pink);
+    height: 200px;
+    width: 300px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.first {
+    background-image: url("/src/images/battleship300x200.png");
+}
+
+.second {
+    background-image: url("/src/images/todo300x200.png");
+
 }
 
 .project-description {

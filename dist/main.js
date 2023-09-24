@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `:root {\n    --main-background:  #101457e7;\n    --main-font-color: #FAF9F6;\n    --custom-pink: #fea49f;\n    --custom-green: #00a0a0f6;\n}\n\n* {\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    color: var(--main-font-color);\n}\n\nsection {\n    padding: 110px 5%;\n    border-top: 1px solid black;\n}\n\nnav {\n    background-color: var(--custom-green);\n    padding: 0 5%;\n    height: 64px;\n    width: 100vw;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    position: fixed;\n    top: 0;\n    z-index: 1;\n    transition: opacity 200ms ease-in-out;\n}\n\n.logo {\n    font-size: 45px;\n    font-weight: 800;\n}\n\nul {\n    display: flex;\n    justify-content: space-around;\n}\n\nli {\n    list-style: none;\n}\n\n.navigation {\n    border: none;\n    background-color: transparent;\n    color: var(--main-font-color);\n    width: 150px;\n    height: 30px;\n    font-size: 1em;\n    letter-spacing: 0.1em;\n}\n\n.navigation:hover {\n    cursor: pointer;\n}\n\n.projects-button, .about-button {\n    border-right: 3px solid var(--custom-pink);\n}\n\n.intro-section {\n    background-color: var(--main-background);\n    height: 100vh;\n    font-size: 30px;\n    display: flex;\n    align-items: center;\n}\n\n.intro-message {\n    padding: 10px 0px;\n    transition: opacity 200ms ease-in-out;\n    position: sticky;\n}\n\n.about-section {\n    background-color: var(--main-background);\n}\n\n.about-heading, .projects-heading, .contact-heading {\n    width: 100%;\n    text-align: center;\n    position: relative;\n    overflow: hidden;\n}\n\n.about-heading::before, .about-heading::after, .projects-heading::before, .projects-heading::after, .contact-heading::before, .contact-heading::after {\n    content: \"\";\n    position: absolute;\n    top: 49%;\n    height: 1px;\n    background-color: var(--custom-green);\n    width: 45%;\n    margin-left: 2%;\n}\n\n.about-heading::before, .projects-heading::before, .contact-heading::before {\n    margin-left: -47%;\n}\n\n.about-ctnr {\n    display: flex;\n    align-items: center;\n    min-height: calc(100vh - 64px);\n\n}\n\n.about-section p {\n    max-width: 500px;\n    font-size: 2em;\n}\n\n.projects-section {\n    background-color: var(--main-background);\n    min-height: 100vh;\n}\n\n.projects-wrapper {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(420px, 720px));\n    justify-content: center;\n    column-gap: 50px;\n    row-gap: 150px;\n    padding-top: 150px;\n}\n\n.project-ctnr {\n    display: flex;\n    align-items: center;\n}\n\n.placeholder-img {\n    background-color: gray;\n    height: 200px;\n    width: 300px;\n}\n\n.project-description {\n    background-color: var(--main-font-color);\n    color: black;\n    padding: 10px;\n    height: 160px;\n    width: 420px;\n}\n\n.contact-section {\n    background-color: var(--main-background);\n    min-height: calc(100vh - 60px);\n}\n\n.contact-section h3 {\n    width: 100%;\n    text-align: center;\n    padding: 100px;\n}\n\n.contact-ctnr {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 20px;\n}\n\n .contact-message label, .contact-name label, .contact-email label {\n    display: none;\n}\n\n.contact-name, .contact-email, .contact-message {\n    width: 100%;\n}\n\n.contact-name input, .contact-email input, .contact-message textarea {\n    width: 100%;\n    padding: 3px;\n}\n\n.contact-message textarea {\n    resize: none;\n}\n\nfooter {\n    background-color: var(--main-background);\n    height: 60px;\n    border-top: 1px solid var(--custom-green);\n}\n\n.invisible {\n    opacity: 0;\n    pointer-events: none;\n}\n\n@media (max-width: 800px) {\n    .project-ctnr {\n        flex-direction: column;\n    }\n}\n\n@media (min-width: 626px) {\n    .contact-name, .contact-email, .contact-message {\n        width: 500px;\n    }\n}\n\n@media (max-width: 980px) {\n    nav {\n        height: 128px;\n        flex-direction: column;\n        justify-content: center;\n        row-gap: 10px;\n    }\n\n    .intro-message {\n        margin: auto;\n    }\n    section {\n        padding: 174px 5%;\n    }\n}`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://portfolio-website/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../src/images/battleship300x200.png */ \"./src/images/battleship300x200.png\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../src/images/todo300x200.png */ \"./src/images/todo300x200.png\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `:root {\n    --main-background:  #101457e7;\n    --main-font-color: #FAF9F6;\n    --custom-pink: #fea49f;\n    --custom-green: #00a0a0f6;\n}\n\n* {\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    color: var(--main-font-color);\n}\n\nsection {\n    padding: 110px 5%;\n    /* border-top: 1px solid black; */\n}\n\nnav {\n    background-color: var(--custom-green);\n    padding: 0 5%;\n    height: 64px;\n    width: 100vw;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    position: fixed;\n    top: 0;\n    z-index: 1;\n    transition: opacity 200ms ease-in-out;\n}\n\n.logo {\n    font-size: 45px;\n    font-weight: 800;\n}\n\nul {\n    display: flex;\n    justify-content: space-around;\n}\n\nli {\n    list-style: none;\n}\n\n.navigation {\n    border: none;\n    background-color: transparent;\n    color: var(--main-font-color);\n    width: 150px;\n    height: 30px;\n    font-size: 1em;\n    letter-spacing: 0.1em;\n}\n\n.navigation:hover {\n    cursor: pointer;\n}\n\n.projects-button, .about-button {\n    border-right: 3px solid var(--custom-pink);\n}\n\n.intro-section {\n    background-color: var(--main-background);\n    height: 100vh;\n    font-size: 30px;\n    display: flex;\n    align-items: center;\n}\n\n.intro-message {\n    padding: 10px 0px;\n    transition: opacity 200ms ease-in-out;\n    position: sticky;\n}\n\n.about-section {\n    background-color: var(--main-background);\n}\n\n.about-heading, .projects-heading, .contact-heading {\n    width: 100%;\n    text-align: center;\n    position: relative;\n    overflow: hidden;\n}\n\n.about-heading::before, .about-heading::after, .projects-heading::before, .projects-heading::after, .contact-heading::before, .contact-heading::after {\n    content: \"\";\n    position: absolute;\n    top: 49%;\n    height: 1px;\n    background-color: var(--custom-green);\n    width: 45%;\n    margin-left: 2%;\n}\n\n.about-heading::before, .projects-heading::before, .contact-heading::before {\n    margin-left: -47%;\n}\n\n.about-ctnr {\n    display: flex;\n    align-items: center;\n    min-height: calc(100vh - 64px);\n\n}\n\n.about-section p {\n    max-width: 500px;\n    font-size: 2em;\n}\n\n.projects-section {\n    background-color: var(--main-background);\n    min-height: 100vh;\n}\n\n.projects-wrapper {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(420px, 720px));\n    justify-content: center;\n    column-gap: 50px;\n    row-gap: 150px;\n    padding-top: 150px;\n}\n\n.project-ctnr {\n    display: flex;\n    align-items: center;\n}\n\n.placeholder-img {\n    background-color: var(--custom-pink);\n    height: 200px;\n    width: 300px;\n}\n\n.project-img {\n    background-color: var(--custom-pink);\n    height: 200px;\n    width: 300px;\n    background-position: center;\n    background-size: contain;\n    background-repeat: no-repeat;\n}\n\n.first {\n    background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});\n}\n\n.second {\n    background-image: url(${___CSS_LOADER_URL_REPLACEMENT_1___});\n\n}\n\n.project-description {\n    background-color: var(--main-font-color);\n    color: black;\n    padding: 10px;\n    height: 160px;\n    width: 420px;\n}\n\n.contact-section {\n    background-color: var(--main-background);\n    min-height: calc(100vh - 60px);\n}\n\n.contact-section h3 {\n    width: 100%;\n    text-align: center;\n    padding: 100px;\n}\n\n.contact-ctnr {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 20px;\n}\n\n .contact-message label, .contact-name label, .contact-email label {\n    display: none;\n}\n\n.contact-name, .contact-email, .contact-message {\n    width: 100%;\n}\n\n.contact-name input, .contact-email input, .contact-message textarea {\n    width: 100%;\n    padding: 3px;\n}\n\n.contact-message textarea {\n    resize: none;\n}\n\nfooter {\n    background-color: var(--main-background);\n    height: 60px;\n    border-top: 1px solid var(--custom-green);\n}\n\n.invisible {\n    opacity: 0;\n    pointer-events: none;\n}\n\n@media (max-width: 800px) {\n    .project-ctnr {\n        flex-direction: column;\n    }\n}\n\n@media (min-width: 626px) {\n    .contact-name, .contact-email, .contact-message {\n        width: 500px;\n    }\n}\n\n@media (max-width: 980px) {\n    nav {\n        height: 128px;\n        flex-direction: column;\n        justify-content: center;\n        row-gap: 10px;\n    }\n\n    .intro-message {\n        margin: auto;\n    }\n    section {\n        padding: 174px 5%;\n    }\n}`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://portfolio-website/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module) => {
 
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\nmodule.exports = function (cssWithMappingToString) {\n  var list = [];\n\n  // return the list of modules as css string\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = \"\";\n      var needLayer = typeof item[5] !== \"undefined\";\n      if (item[4]) {\n        content += \"@supports (\".concat(item[4], \") {\");\n      }\n      if (item[2]) {\n        content += \"@media \".concat(item[2], \" {\");\n      }\n      if (needLayer) {\n        content += \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\");\n      }\n      content += cssWithMappingToString(item);\n      if (needLayer) {\n        content += \"}\";\n      }\n      if (item[2]) {\n        content += \"}\";\n      }\n      if (item[4]) {\n        content += \"}\";\n      }\n      return content;\n    }).join(\"\");\n  };\n\n  // import a list of modules into the list\n  list.i = function i(modules, media, dedupe, supports, layer) {\n    if (typeof modules === \"string\") {\n      modules = [[null, modules, undefined]];\n    }\n    var alreadyImportedModules = {};\n    if (dedupe) {\n      for (var k = 0; k < this.length; k++) {\n        var id = this[k][0];\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n    for (var _k = 0; _k < modules.length; _k++) {\n      var item = [].concat(modules[_k]);\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        continue;\n      }\n      if (typeof layer !== \"undefined\") {\n        if (typeof item[5] === \"undefined\") {\n          item[5] = layer;\n        } else {\n          item[1] = \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\").concat(item[1], \"}\");\n          item[5] = layer;\n        }\n      }\n      if (media) {\n        if (!item[2]) {\n          item[2] = media;\n        } else {\n          item[1] = \"@media \".concat(item[2], \" {\").concat(item[1], \"}\");\n          item[2] = media;\n        }\n      }\n      if (supports) {\n        if (!item[4]) {\n          item[4] = \"\".concat(supports);\n        } else {\n          item[1] = \"@supports (\".concat(item[4], \") {\").concat(item[1], \"}\");\n          item[4] = supports;\n        }\n      }\n      list.push(item);\n    }\n  };\n  return list;\n};\n\n//# sourceURL=webpack://portfolio-website/./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    options = {};\n  }\n  if (!url) {\n    return url;\n  }\n  url = String(url.__esModule ? url.default : url);\n\n  // If url is already wrapped in quotes, remove them\n  if (/^['\"].*['\"]$/.test(url)) {\n    url = url.slice(1, -1);\n  }\n  if (options.hash) {\n    url += options.hash;\n  }\n\n  // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n  if (/[\"'() \\t\\n]|(%20)/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n  return url;\n};\n\n//# sourceURL=webpack://portfolio-website/./node_modules/css-loader/dist/runtime/getUrl.js?");
 
 /***/ }),
 
@@ -118,6 +128,26 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\nconst navBar = document.querySelector(\"nav\");\nconst introMessage = document.querySelector(\".intro-message\");\nconst projectsSection = document.querySelector(\".projects-section\");\nconst aboutSection = document.querySelector(\".about-section\");\nconst contactSection = document.querySelector(\".contact-section\");\nconst aboutButton = document.querySelector(\".about-button\");\nconst projectsButton = document.querySelector(\".projects-button\");\nconst contactButton = document.querySelector(\".contact-button\");\n\nfunction scrollTo(section) {\n  section.scrollIntoView({ behavior: \"smooth\" });\n}\n\naboutButton.addEventListener(\"click\", () => {\n  scrollTo(aboutSection);\n});\n\nprojectsButton.addEventListener(\"click\", () => {\n  scrollTo(projectsSection);\n});\n\ncontactButton.addEventListener(\"click\", () => {\n  scrollTo(contactSection);\n});\n\nfunction changeNavOpacity() {\n  const messagePosition = introMessage.getBoundingClientRect().top;\n  if (messagePosition <= 0) {\n    navBar.classList.remove(\"invisible\");\n    introMessage.classList.add(\"invisible\");\n  } else {\n    navBar.classList.add(\"invisible\");\n    introMessage.classList.remove(\"invisible\");\n  }\n}\n\nwindow.addEventListener(\"scroll\", changeNavOpacity);\n\n\n//# sourceURL=webpack://portfolio-website/./src/index.js?");
 
+/***/ }),
+
+/***/ "./src/images/battleship300x200.png":
+/*!******************************************!*\
+  !*** ./src/images/battleship300x200.png ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"b4d4012ee429f876082c.png\";\n\n//# sourceURL=webpack://portfolio-website/./src/images/battleship300x200.png?");
+
+/***/ }),
+
+/***/ "./src/images/todo300x200.png":
+/*!************************************!*\
+  !*** ./src/images/todo300x200.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"9ce2e2985cdc35d572d3.png\";\n\n//# sourceURL=webpack://portfolio-website/./src/images/todo300x200.png?");
+
 /***/ })
 
 /******/ 	});
@@ -146,6 +176,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -171,6 +204,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -185,6 +230,55 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
