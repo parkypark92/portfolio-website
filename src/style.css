@@ -124,40 +124,44 @@ li {
 
 .projects-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 720px));
+    grid-template-columns: repeat(auto-fit, 420px);
     justify-content: center;
-    column-gap: 50px;
+    column-gap: 100px;
     row-gap: 150px;
     padding-top: 150px;
 }
 
 .project-ctnr {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .placeholder-img {
     background-color: var(--custom-pink);
-    height: 200px;
-    width: 300px;
+    height: 230px;
+    width: 420px;
 }
 
 .project-img {
-    background-color: var(--custom-pink);
-    height: 200px;
-    width: 300px;
+    background-color: var(--main-background);
+    height: 230px;
+    width: 420px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .first {
-    background-image: url("/src/images/battleship300x200.png");
+    background-image: url("/src/images/battleship-fullsize.png");
 }
 
 .second {
     background-image: url("/src/images/todo300x200.png");
+}
 
+.third {
+    background-image: url("/src/images/tictaktoe-fullsize.png");
 }
 
 .project-description {
