@@ -1,5 +1,6 @@
 import "./style.css";
 
+const mainBody = document.querySelector("body");
 const navBar = document.querySelector("nav");
 const introMessage = document.querySelector(".intro-message");
 const projectsSection = document.querySelector(".projects-section");
@@ -31,9 +32,11 @@ function changeNavOpacity() {
   if (messagePosition <= 0) {
     navBar.classList.remove("invisible");
     introMessage.classList.add("invisible");
+    mainBody.classList.remove("bright-background");
   } else {
     navBar.classList.add("invisible");
     introMessage.classList.remove("invisible");
+    mainBody.classList.add("bright-background");
   }
 }
 
