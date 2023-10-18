@@ -1,6 +1,5 @@
 import "./style.css";
 
-const mainBody = document.querySelector("body");
 const navBar = document.querySelector("nav");
 const introMessage = document.querySelector(".intro-message");
 const projectsSection = document.querySelector(".projects-section");
@@ -10,6 +9,9 @@ const sections = [projectsSection, aboutSection, contactSection];
 const aboutButton = document.querySelector(".about-button");
 const projectsButton = document.querySelector(".projects-button");
 const contactButton = document.querySelector(".contact-button");
+const bigAboutButton = document.querySelector(".big-about");
+const bigProjectsButton = document.querySelector(".big-projects");
+const bigContactButton = document.querySelector(".big-contact");
 
 function scrollTo(section) {
   section.scrollIntoView({ behavior: "smooth" });
@@ -27,16 +29,50 @@ contactButton.addEventListener("click", () => {
   scrollTo(contactSection);
 });
 
+bigAboutButton.addEventListener("click", () => {
+  scrollTo(aboutSection);
+});
+
+bigAboutButton.addEventListener("mouseover", (e) => {
+  descaleText(e.currentTarget);
+});
+
+bigAboutButton.addEventListener("mouseout", (e) => {
+  rescaleText(e.currentTarget);
+});
+
+bigProjectsButton.addEventListener("click", () => {
+  scrollTo(projectsSection);
+});
+
+bigProjectsButton.addEventListener("mouseover", (e) => {
+  descaleText(e.currentTarget);
+});
+
+bigProjectsButton.addEventListener("mouseout", (e) => {
+  rescaleText(e.currentTarget);
+});
+
+bigContactButton.addEventListener("click", () => {
+  scrollTo(contactSection);
+});
+
+bigContactButton.addEventListener("mouseover", (e) => {
+  descaleText(e.currentTarget);
+});
+
+bigContactButton.addEventListener("mouseout", (e) => {
+  rescaleText(e.currentTarget);
+});
+
 function changeNavOpacity() {
   const messagePosition = introMessage.getBoundingClientRect().top;
   if (messagePosition <= 0) {
     navBar.classList.remove("invisible");
     introMessage.classList.add("invisible");
-    mainBody.classList.remove("bright-background");
   } else {
     navBar.classList.add("invisible");
     introMessage.classList.remove("invisible");
-    mainBody.classList.add("bright-background");
   }
 }
 
@@ -59,6 +95,14 @@ function navHighlight() {
         .classList.remove("highlighted");
     }
   }
+}
+
+function descaleText(button) {
+  button.querySelector("p").classList.add("descale-text");
+}
+
+function rescaleText(button) {
+  button.querySelector("p").classList.remove("descale-text");
 }
 
 window.addEventListener("scroll", changeNavOpacity);

@@ -4,6 +4,11 @@
     src: url('./Fonts/Roboto-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Cutive';
+    src: url("./Fonts/CutiveMono-Regular.ttf");
+}
+
 :root {
     --main-background:  #191d52e8;
     --main-font-color: #FAF9F6;
@@ -21,18 +26,11 @@
 body {
     color: var(--main-font-color);
     background-color: var(--main-background);
-    transition: background-color 100ms;
-}
-
-.bright-background {
-    background-color: rgb(255, 255, 255);
-    color: black;
 }
 
 section {
     padding: 110px 5% 0 5%;
     min-height: 900px;
-    /* border-top: 1px solid black; */
 }
 
 nav {
@@ -87,21 +85,18 @@ color: var(--custom-pink);
 
 .intro-section {
     padding: 0 5%;
-    /* background-color: var(--main-background); */
     height: 100vh;
     font-weight: normal;
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 150px;
     position: relative;
-    z-index: -1;
 }
 
 .intro-message {
     font-weight: normal;
     font-size: 1.7em;
     padding: 10px 0px;
-    transition: opacity 200ms ease-in-out;
     position: sticky;
 }
 
@@ -115,12 +110,29 @@ color: var(--custom-pink);
 
 .big-button {
     height: 250px;
-    font-size: 2.2em;
+    font-size: 2.4em;
+    color: #fcfcfc;
     text-align: left;
-    padding: 0 0 100px 20px;
+    padding: 50px 0 0 20px;
     background-color: transparent;
     border: none;
+    border-radius: 5px;
     position: relative;
+    overflow: hidden;
+}
+
+.big-button p {
+    font-family: 'Cutive';
+    text-shadow: black 2px 2px 10px;
+}
+
+.big-button:hover {
+    scale: 101%;
+    cursor: pointer;
+}
+
+.descale-text {
+    scale: 99%;
 }
 
 .big-about::before, .big-projects::before, .big-contact::before {
@@ -133,12 +145,12 @@ color: var(--custom-pink);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: opacity(50%);
+    filter: opacity(75%) contrast(75%);
     z-index: -1;
 }
 
 .big-about::before {
-    background-image: url('./images/taras-shypka-iFSvn82XfGo-unsplash.jpg');
+    background-image: url('./images/growtika-9WnjxT1NCoY-unsplash.jpg');
 }
 
 .big-projects::before {
@@ -150,7 +162,6 @@ color: var(--custom-pink);
 }
 
 .about-section {
-    /* background-color: var(--main-background); */
     height: 100vh;
     min-height: 800px;
 }
@@ -199,7 +210,6 @@ color: var(--custom-pink);
 }
 
 .projects-section {
-    /* background-color: var(--main-background); */
     min-height: 800px;
 }
 
@@ -254,7 +264,6 @@ color: var(--custom-pink);
 }
 
 .contact-section {
-    /* background-color: var(--main-background); */
     height: calc(100vh - 60px);
     min-height: 800px;
 }
@@ -290,7 +299,6 @@ color: var(--custom-pink);
 }
 
 footer {
-    /* background-color: var(--main-background); */
     height: 60px;
     border-top: 1px solid var(--custom-green);
 }
