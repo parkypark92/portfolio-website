@@ -9,15 +9,26 @@
     src: url("./Fonts/CutiveMono-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'Dosis';
+    src: url('./Fonts/Dosis-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Didact Gothic';
+    src: url('./Fonts/DidactGothic-Regular.ttf');
+}
+
 :root {
-    --main-background:  #191d52e8;
+    /* --main-background:  #191d52e8; */
+    --main-background:  #2B2E63;
     --main-font-color: #FAF9F6;
-    --custom-pink: #fea49f;
+    --custom-pink: #f59f9b;
     --custom-green: #00a0a0f6;
 }
 
 * {
-    font-family: 'Roboto';
+    font-family: 'Didact Gothic';
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -34,7 +45,7 @@ section {
 }
 
 nav {
-    background-color: var(--custom-green);
+    background-color: #1b1f5aec;
     padding: 0 5%;
     height: 64px;
     width: 100vw;
@@ -100,6 +111,10 @@ color: var(--custom-pink);
     position: sticky;
 }
 
+span {
+    color: var(--custom-pink);
+}
+
 .big-buttons {
     height: 90%;
     flex-grow: 1;
@@ -116,14 +131,14 @@ color: var(--custom-pink);
     padding: 50px 0 0 20px;
     background-color: transparent;
     border: none;
-    border-radius: 5px;
+    box-shadow: 0px 0px 15px #262958;
     position: relative;
     overflow: hidden;
 }
 
 .big-button p {
     font-family: 'Cutive';
-    text-shadow: black 2px 2px 10px;
+    text-shadow: black 3px 3px 5px;
 }
 
 .big-button:hover {
@@ -135,7 +150,7 @@ color: var(--custom-pink);
     scale: 99%;
 }
 
-.big-about::before, .big-projects::before, .big-contact::before {
+.big-button::before {
     content: "";
     position: absolute;
     top: 0;
@@ -205,8 +220,16 @@ color: var(--custom-pink);
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 80px;
     max-width: 500px;
+}
+
+.skill-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.5em;
 }
 
 .projects-section {
@@ -214,12 +237,10 @@ color: var(--custom-pink);
 }
 
 .projects-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 420px);
-    justify-content: center;
-    column-gap: 100px;
-    row-gap: 150px;
-    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 100px;
 }
 
 .project-ctnr {
@@ -230,34 +251,22 @@ color: var(--custom-pink);
 
 .placeholder-img {
     background-color: var(--custom-pink);
-    height: 230px;
-    width: 420px;
+    height: 430px;
+    width: 840px;
 }
 
 .project-img {
-    background-color: var(--main-background);
-    height: 230px;
-    width: 420px;
+    height: auto;
+    max-width: 840px;
+    width: 90%;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-}
-
-.first {
-    background-image: url("/src/images/battleship-fullsize.png");
-}
-
-.second {
-    background-image: url("/src/images/todo300x200.png");
-}
-
-.third {
-    background-image: url("/src/images/tictaktoe-fullsize.png");
 }
 
 .project-description {
     background-color: var(--main-font-color);
-    color: black;
+    color: #111111;
     padding: 10px;
     height: 160px;
     width: 420px;
@@ -271,7 +280,7 @@ color: var(--custom-pink);
 .contact-section h3 {
     width: 100%;
     text-align: center;
-    padding: 100px;
+    padding: 100px 0px 50px 0px;
 }
 
 .contact-ctnr {
@@ -298,6 +307,18 @@ color: var(--custom-pink);
     resize: none;
 }
 
+.submit-form {
+    height: 30px;
+    width: 80px;
+    background-color: var(--custom-pink);
+    border: none;
+}
+
+.submit-form:hover {
+    cursor: pointer;
+    background-color:#f38c86;
+}
+
 footer {
     height: 60px;
     border-top: 1px solid var(--custom-green);
@@ -306,12 +327,6 @@ footer {
 .invisible {
     opacity: 0;
     pointer-events: none;
-}
-
-@media (max-width: 800px) {
-    .project-ctnr {
-        flex-direction: column;
-    }
 }
 
 @media (min-width: 626px) {

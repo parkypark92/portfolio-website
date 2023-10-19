@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav class="invisible">
-        <h1 class="logo">Hi, I'm Andrew.</h1>
+        <h1 class="logo">Hi, I'm <span>Andrew</span>.</h1>
         <ul>
             <li>
                 <button class="navigation about-button">About</button>
@@ -23,7 +23,7 @@
     </nav>
     <section class="intro-section">
             <div class="intro-message">
-                <h2>Hi, I'm Andrew.</h2>
+                <h2>Hi, I'm <span class="my-name">Andrew</span>.</h2>
                 <p>Welcome to my portfolio!</p>
             </div>
             <div class="big-buttons">
@@ -39,14 +39,38 @@
             <div class="about-ctnr">
                 <p>After completing a Bachelors Degree in Digital Media Design, I took a few years off to explore other interests. In 2022 I decided to revisit my passion for coding and dove into the world of Web Development! If you'd like to learn more about me, check out my socials!</p>
                 <div class="skills-logos">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="100" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="100" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="100"/>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="100"/>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="100"/>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" height="100"/>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" height="100"/>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" height="100"/>
+                    <div class="skill-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="80" />
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="80" />
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="80"/>
+                        <p>JAVASCRIPT</p>
+                    </div>
+                    <div class="skill-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="80"/>
+                        <p>GIT</p>
+                    </div>
+                    <div class="skill-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="80"/>
+                        <p>GITHUB</p>
+                    </div>
+                    <div class="skill-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" height="80"/>
+                        <p>NPM</p>
+                    </div>
+                    <div class="skill-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" height="80"/>
+                        <p>WEBPACK</p>
+                    </div>
+                    <div class="skill-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" height="80"/>
+                        <p>JEST</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -54,8 +78,7 @@
             <h1 class="projects-heading">PROJECTS</h1>
             <div class="projects-wrapper">
                 <div class="project-ctnr">
-                    <div class="project-img first">
-                    </div>
+                        <img src="/src/images/battleship-fullsize.png" alt="" class="project-img">
                     <div class="project-description">
                         <h3>Battleships</h3>
                         <p>Place your battleships and test your skills againt the computer. <br> <br>
@@ -63,16 +86,14 @@
                     </div>
                 </div>
                 <div class="project-ctnr">
-                    <div class="project-img second">
-                    </div>
+                        <img src="/src/images/Screenshot from 2023-09-24 17-12-46.png" alt="" class="project-img">
                     <div class="project-description">
                         <h3>To-Do App</h3>
                         <p>An app allowing the user to add, edit, delete and mark as complete various tasks, as well as sorting tasks by priority and date. <br><br> Made using HTML, CSS and Javascript.</p>
                     </div>
                 </div>
                 <div class="project-ctnr">
-                    <div class="project-img third">
-                    </div>
+                        <img src="/src/images/tictaktoe-fullsize.png" alt="" class="project-img">
                     <div class="project-description">
                         <h3>Tik Tak Toe</h3>
                         <p>Play the classic game against a friend or the computer! <br><br> Made using HTML, CSS and Javascript.</p>
@@ -104,22 +125,24 @@
         <section class="contact-section" id="contact">
             <h1 class="contact-heading">CONTACT</h1>
             <h3>Don't hesitate to contact me!</h3>
-                    <div class="contact-ctnr">
-                        <div class="contact-name">
-                            <label for="name">Name
-                            </label>
-                            <input type="text" id="name" placeholder="Name">
+                    <form action="">
+                        <div class="contact-ctnr">
+                            <div class="contact-name">
+                                <label for="name">Name
+                                </label>
+                                <input type="text" id="name" placeholder="Name">
+                            </div>
+                            <div class="contact-email">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Email">
+                            </div>
+                            <div class="contact-message">
+                                <label for="message">Your Message</label>
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Please enter your message!"></textarea>
+                            </div>
+                            <button class="submit-form">Submit</button>
                         </div>
-                        <div class="contact-email">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Email">
-                        </div>
-                        <div class="contact-message">
-                            <label for="message">Your Message</label>
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Please enter your message!"></textarea>
-                        </div>
-                        <button> Submit</button>
-                    </div>
+                    </form>
         </section>
     </main>
     <footer>

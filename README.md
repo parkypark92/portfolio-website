@@ -5,4 +5,4 @@ The goal of this project is to create a fully responsive personal portfolio webs
 desktop keyboard background image by Fotis Fotopoulos - unsplash
 ipad image by Taras Shypka - unsplash
 meeting image by Scott Graham - unsplash
-html tag image by Jackson Sophat - unsplash
+skills pic by growtika - unsplash
