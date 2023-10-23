@@ -245,8 +245,12 @@ span {
 
 .project-ctnr {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 50px;
+    position: relative;
+}
+
+.project-right {
+    flex-direction: row-reverse;
 }
 
 .placeholder-img {
@@ -262,14 +266,45 @@ span {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.project-ctnr::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 80%;
+    width: 80%;
+    max-width: 900px;
+    background-color: var(--custom-green);
+    z-index: -1;
+}
+
+.project-left::before {
+    left: 100px;
+}
+
+.project-right::before {
+    right: 100px;
 }
 
 .project-description {
     background-color: var(--main-font-color);
     color: #111111;
     padding: 10px;
-    height: 160px;
-    width: 420px;
+    height: 250px;
+    width: 500px;
+    position: absolute;
+    top: 20%;
+    transform: translateZ(-1px);
+}
+
+.project-left > .project-description {
+    left: 50%;
+}
+
+.project-right > .project-description {
+    right: 50%;
 }
 
 .contact-section {
