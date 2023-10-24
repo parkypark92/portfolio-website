@@ -3,6 +3,7 @@ import "./style.css";
 const navBar = document.querySelector("nav");
 const introMessage = document.querySelector(".intro-message");
 const projectsSection = document.querySelector(".projects-section");
+const projectContainers = document.querySelectorAll(".project-ctnr");
 const aboutSection = document.querySelector(".about-section");
 const contactSection = document.querySelector(".contact-section");
 const sections = [projectsSection, aboutSection, contactSection];

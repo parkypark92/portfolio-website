@@ -21,7 +21,8 @@
 
 :root {
     /* --main-background:  #191d52e8; */
-    --main-background:  #2B2E63;
+    /* --main-background:  #2B2E63; */
+    --main-background:  #1b1d3d;
     --main-font-color: #FAF9F6;
     --custom-pink: #f59f9b;
     --custom-green: #00a0a0f6;
@@ -45,7 +46,7 @@ section {
 }
 
 nav {
-    background-color: #1b1f5aec;
+    background-color: #2b3072ec;
     padding: 0 5%;
     height: 64px;
     width: 100vw;
@@ -55,7 +56,7 @@ nav {
     justify-content: space-between;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     transition: opacity 200ms ease-in-out;
 }
 
@@ -131,7 +132,7 @@ span {
     padding: 50px 0 0 20px;
     background-color: transparent;
     border: none;
-    box-shadow: 0px 0px 15px #262958;
+    box-shadow: 0px 0px 15px #151733;
     position: relative;
     overflow: hidden;
 }
@@ -219,6 +220,7 @@ span {
 .skills-logos {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 80px;
     max-width: 500px;
@@ -241,6 +243,7 @@ span {
     flex-direction: column;
     gap: 50px;
     padding-top: 100px;
+    height: fit-content;
 }
 
 .project-ctnr {
@@ -256,7 +259,8 @@ span {
 .placeholder-img {
     background-color: var(--custom-pink);
     height: 430px;
-    width: 840px;
+    max-width: 840px;
+    width: 90%;
 }
 
 .project-img {
@@ -296,7 +300,11 @@ span {
     width: 500px;
     position: absolute;
     top: 20%;
-    transform: translateZ(-1px);
+    box-shadow: 0px 0px 5px rgb(71, 71, 71);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .project-left > .project-description {
@@ -306,6 +314,16 @@ span {
 .project-right > .project-description {
     right: 50%;
 }
+
+.project-links {
+    align-self: end;
+}
+
+a {
+    padding: 10px;
+}
+
+
 
 .contact-section {
     height: calc(100vh - 60px);
@@ -383,6 +401,37 @@ footer {
     }
     section {
         padding: 174px 5% 0 5%;
+    }
+
+    .big-buttons {
+        display: none;
+    }
+}
+
+@media (max-width: 1120px) {
+    .project-ctnr {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0px;
+    }
+
+    .project-description {
+        position: static;
+        width: 90%;;
+    }
+
+    .project-ctnr::before {
+        height: 90%;
+        width: 90%;
+        top: 5%;
+    }
+
+    .project-left::before {
+        left: 10%;
+    }
+
+    .project-right::before {
+        right: 10%;
     }
 }
 
